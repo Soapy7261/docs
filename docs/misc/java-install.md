@@ -91,6 +91,18 @@ sudo curl -Lo /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.r
 sudo yum -y install java-21-amazon-corretto-devel
 ```
 
+### Nix
+
+If you're using the Nix package manager, installing Java 21 is simple using `nix-env` or by adding it to your configuration.
+
+To install it globally with `nix-env`:
+
+```bash
+nix-env -iA nixpkgs.corretto21
+```
+
+If you are using Nix flakes or `home-manager`, you can also add `pkgs.corretto21` to your system or user environment.
+
 ## Windows 10 & 11
 
 If you're on Windows 10 or 11, installing Java is just like installing any other program. Download
